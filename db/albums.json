@@ -19,7 +19,7 @@
             "title": "Wasteland, Baby!",
             "artiste": "Hozier",
             "songs": [
-                { "id": 1, "listenCount": 0, "name": "Nina Cried Power (feat. Mavis Staples)" },
+                { "id": 1, "listenCount": 0, "name": "Nina Cried Power" },
                 { "id": 2, "listenCount": 0, "name": "Almost (Sweet Music)" },
                 { "id": 3, "listenCount": 0, "name": "Movement" },
                 { "id": 4, "listenCount": 0, "name": "No Plan" },
