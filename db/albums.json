@@ -1,45 +1,44 @@
 {
-    "albums": [
-        {
-            "id": 1,
-            "title": "Lonerism",
-            "artiste": "Tame Impala",
-            "songs": [
-                { "id": 1, "listenCount": 0, "name": "Be Above It" },
-                { "id": 2, "listenCount": 0, "name": "Endors Toi" },
-                { "id": 3, "listenCount": 0, "name": "Apocalypse Dreams" },
-                { "id": 4, "listenCount": 0, "name": "Mind Mischief" },
-                { "id": 5, "listenCount": 0, "name": "Elephant" }
-            ],
-            "genre": "Alternative",
-            "year": 2012
-        },
-        {
-            "id": 2,
-            "title": "Wasteland, Baby!",
-            "artiste": "Hozier",
-            "songs": [
-                { "id": 1, "listenCount": 0, "name": "Nina Cried Power" },
-                { "id": 2, "listenCount": 0, "name": "Almost (Sweet Music)" },
-                { "id": 3, "listenCount": 0, "name": "Movement" },
-                { "id": 4, "listenCount": 0, "name": "No Plan" },
-                { "id": 5, "listenCount": 0, "name": "Nobody" }
-            ],
-            "genre": "Alternative",
-            "year": 2019
-        },
-        {
-            "id": 3,
-            "title": "APOLLO",
-            "artiste": "Fireboy DML",
-            "songs": [
-                { "id": 1, "listenCount": 0, "name": "Champion" },
-                { "id": 2, "listenCount": 0, "name": "Spell" },
-                { "id": 3, "listenCount": 0, "name": "Tattoo" },
-                { "id": 4, "listenCount": 0, "name": "Dreamer" }
-            ],
-            "genre": "Worldwide",
-            "year": 2020
-        }
-    ]
+  "albums": [
+    {
+      "id": 1,
+      "title": "Lonerism",
+      "artiste": "Tame Impala",
+      "songs": [
+        "Be Above It",
+        "Endors Toi",
+        "Apocalypse Dreams",
+        "Mind Mischief"
+      ],
+      "genre": "Alternative",
+      "year": "2012"
+    },
+    {
+      "id": 2,
+      "title": "Wasteland, Baby!",
+      "artiste": "Hozier",
+      "songs": [
+        "Nina Cried Power",
+        "Almost (Sweet Music)",
+        "Movement",
+        "No Plan",
+        "Nobody"
+      ],
+      "genre": "Alternative",
+      "year": 2019
+    },
+    {
+      "id": 3,
+      "title": "APOLLO",
+      "artiste": "Fireboy DML",
+      "songs": [
+        "Champion",
+        "Spell",
+        "Tattoo",
+        "Dreamer"
+      ],
+      "genre": "Worldwide",
+      "year": 2020
+    }
+  ]
 }
