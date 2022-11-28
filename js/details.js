@@ -13,7 +13,8 @@ const mainFunc = async () => {
         if (!res.ok) window.location.replace("/");
         //
         const album = await res.json();
-
+        const title = document.querySelector("title");
+        title.textContent = album.title;
         console.log(album);
 
         let template = `

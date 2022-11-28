@@ -10,9 +10,9 @@ const loadFunc = async () => {
         const uri = `http://localhost:8080/albums/${id}`;
         const response = await fetch(uri);
         const album = await response.json();
+        document.querySelector("title").textContent = album.title;
         album.songs = album.songs.join(", ");
         console.log(album);
-        const title = album;
 
         main.innerHTML = `
     <h2 class="text-center">Edit Album</h2>
