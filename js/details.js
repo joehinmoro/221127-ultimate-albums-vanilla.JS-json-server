@@ -1,22 +1,25 @@
 // get id of album from query string
 const id = new URLSearchParams(window.location.search).get("id");
 
-//
-const main = document.querySelector(".main");
-
+// select main div
+const main = document.querySelector("main");
+// main page function (edit)
 const mainFunc = async () => {
     try {
+        // define request uri
         const uri = `http://localhost:8080/albums/${id}`;
         // make request to json server using id
         const res = await fetch(uri);
-        // redirect if bad req
+        // redirect to index if bad req
         if (!res.ok) window.location.replace("/");
-        //
+        // parse request json to obj
         const album = await res.json();
+        // assign album name to page title
         const title = document.querySelector("title");
         title.textContent = album.title;
         console.log(album);
 
+        // create album template
         let template = `
         <h2>${album.title}</h2>
             <h4><a href="#" class="text-light text-decoration-none">${album.artiste}</a></h4>

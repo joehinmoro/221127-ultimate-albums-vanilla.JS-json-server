@@ -1,6 +1,9 @@
+// select main div
 const main = document.querySelector("main");
 
+// main function (new route)
 const mainFunc = () => {
+    // insert new album form into main div
     main.innerHTML = `
 <h2 class="text-center">New Album</h2>
             <div class="container mt-5">
@@ -83,10 +86,10 @@ const mainFunc = () => {
             </div>
 `;
 
+    // select new album form and listen for submit
     const form = document.querySelector("form");
-
     form.addEventListener("submit", async (evt) => {
-        //
+        // prevent submit and extract field values
         evt.preventDefault();
         const artiste = form.artiste.value;
         const title = form.title.value;
@@ -95,16 +98,17 @@ const mainFunc = () => {
         const year = form.year.value;
         console.log(artiste, title, songsCSV, genre, year);
 
-        //
+        // parse song csv to array
         const songs = songsCSV.split(", ");
+        // new album array
         const requestBody = { artiste, title, songs, genre, year };
-        //
+        // post request (new)
         await fetch("http://localhost:8080/albums", {
             method: "POST",
             body: JSON.stringify(requestBody),
             headers: { "Content-Type": "application/json" },
         });
-        //
+        // redirect to index
         window.location.replace("/index.html");
     });
 };
